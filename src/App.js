@@ -6,7 +6,7 @@ import Dashboard from './Dashboard';
 import UserIcon from '@mui/icons-material/Group';
 import { UserList } from './users';
 
-const dataProvider = drfProvider('http://localhost:8000/api');
+const dataProvider = drfProvider('https://snaplapse.herokuapp.com/api');
 console.log(dataProvider)
 
 function App() {
