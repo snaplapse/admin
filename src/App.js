@@ -7,10 +7,14 @@ import UserIcon from '@mui/icons-material/Group';
 import PlaceIcon from '@mui/icons-material/Place';
 import PhotoIcon from '@mui/icons-material/Photo';
 import CategoryIcon from '@mui/icons-material/Category';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FlagIcon from '@mui/icons-material/Flag';
 import { UserList } from './users';
 import { LocationList } from './locations';
 import { PhotosList } from './photos';
 import { CategoryList } from './categories';
+import { LikeList } from './likes';
+import { FlagList } from './flags';
 
 const dataProvider = drfProvider('http://localhost:8000/api');
 
@@ -36,6 +40,16 @@ function App() {
         name="categories"
         list={CategoryList}
         icon={CategoryIcon}
+      />
+      <Resource
+        name="likes"
+        list={LikeList}
+        icon={FavoriteIcon}
+      />
+      <Resource
+        name="flags"
+        list={FlagList}
+        icon={FlagIcon}
       />
     </Admin>
   );
