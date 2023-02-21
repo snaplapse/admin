@@ -6,9 +6,11 @@ import Dashboard from './Dashboard';
 import UserIcon from '@mui/icons-material/Group';
 import PlaceIcon from '@mui/icons-material/Place';
 import PhotoIcon from '@mui/icons-material/Photo';
+import CategoryIcon from '@mui/icons-material/Category';
 import { UserList } from './users';
 import { LocationList } from './locations';
 import { PhotosList } from './photos';
+import { CategoryList } from './categories';
 
 const dataProvider = drfProvider('http://localhost:8000/api');
 
@@ -29,6 +31,11 @@ function App() {
         name="photos"
         list={PhotosList}
         icon={PhotoIcon}
+      />
+      <Resource
+        name="categories"
+        list={CategoryList}
+        icon={CategoryIcon}
       />
     </Admin>
   );
