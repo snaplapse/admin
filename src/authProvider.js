@@ -1,9 +1,11 @@
 // in src/authProvider.js
 export default {
     // called when the user attempts to log in
-    login: ({ username }) => {
+    login: ({ username, password }) => {
+      if (username !== 'admin123' || password !== 'abc') {
+        return Promise.reject();
+      }
       localStorage.setItem('username', username);
-      // accept all username/password combinations
       return Promise.resolve();
     },
     // called when the user clicks on the logout button
