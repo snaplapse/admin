@@ -10,13 +10,13 @@ import CategoryIcon from '@mui/icons-material/Category';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FlagIcon from '@mui/icons-material/Flag';
 import TagIcon from '@mui/icons-material/Tag';
-import { UserList } from './users';
-import { LocationList } from './locations';
-import { PhotosList } from './photos';
-import { CategoryList } from './categories';
-import { LikeList } from './likes';
-import { FlagList } from './flags';
-import { TagList } from './tags';
+import { UserList } from './Lists/users';
+import { LocationList } from './Lists/locations';
+import { PhotosList } from './Lists/photos';
+import { CategoryList } from './Lists/categories';
+import { LikeList } from './Lists/likes';
+import { FlagList } from './Lists/flags';
+import { TagList } from './Lists/tags';
 
 const dataProvider = drfProvider('https://snaplapse.herokuapp.com/api');
 
