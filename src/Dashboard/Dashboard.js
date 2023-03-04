@@ -6,7 +6,7 @@ export default () => (
     <Card>
         <CardHeader title="Welcome to the SnapLapse administration portal!" />
         <CardContent>
-            <DateTime></DateTime>
+            <DateTime />
         </CardContent>
     </Card>
 );

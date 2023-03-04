@@ -2,7 +2,7 @@ import React from 'react';
 import { Admin, Resource } from 'react-admin';
 import drfProvider from 'ra-data-django-rest-framework';
 import authProvider from './authProvider';
-import Dashboard from './Dashboard';
+import Dashboard from './Dashboard/Dashboard';
 import UserIcon from '@mui/icons-material/Group';
 import PlaceIcon from '@mui/icons-material/Place';
 import PhotoIcon from '@mui/icons-material/Photo';
