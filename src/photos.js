@@ -1,9 +1,14 @@
-import { List, Datagrid, TextField, DateField, BooleanField, ReferenceField } from "react-admin";
+import { List, Datagrid, TextField, DateField, BooleanField, ReferenceField, ImageField } from "react-admin";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
-export const PhotosList = () => (
+export const PhotosList = () => (  
   <List>
     <Datagrid rowClick="edit">
       <TextField source="id" />
+      <Zoom>
+        <ImageField source="bitmap" label="Image" />
+      </Zoom>
       <TextField source="description" />
       <BooleanField source="visible" />
       <DateField source="created" />

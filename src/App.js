@@ -18,7 +18,7 @@ import { LikeList } from './likes';
 import { FlagList } from './flags';
 import { TagList } from './tags';
 
-const dataProvider = drfProvider('http://localhost:8000/api');
+const dataProvider = drfProvider('https://snaplapse.herokuapp.com/api');
 
 function App() {
   return (
@@ -34,7 +34,8 @@ function App() {
         icon={PlaceIcon}
       />
       <Resource
-        name="photos"
+        name="photos/prefixed"
+        options={{ label: 'Photos' }}
         list={PhotosList}
         icon={PhotoIcon}
       />
